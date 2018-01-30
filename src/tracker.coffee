@@ -149,7 +149,7 @@ class VASTTracker extends EventEmitter
                 variables = CONTENTPLAYHEAD: @progressFormated()
             clickThroughURL = VASTUtil.resolveURLTemplates([@clickThroughURLTemplate], variables)[0]
 
-            @emit "clickthrough", clickThroughURL
+        @emit "clickthrough", clickThroughURL
 
     track: (eventName, once=no) ->
 
