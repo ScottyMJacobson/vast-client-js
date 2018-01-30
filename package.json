@@ -24,7 +24,7 @@
   "engines": {
     "node": ">=0.10.26"
   },
-  "main": "vast-client.js",
+  "main": "dist/index.js",
   "browser": "vast-client.js",
   "scripts": {
     "test": "mocha --compilers coffee:coffee-script/register --reporter spec test/*.coffee",

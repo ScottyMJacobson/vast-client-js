@@ -1709,8 +1709,8 @@ VASTTracker = (function(superClass) {
         };
       }
       clickThroughURL = VASTUtil.resolveURLTemplates([this.clickThroughURLTemplate], variables)[0];
+      return this.emit("clickthrough", clickThroughURL);
     }
-    return this.emit("clickthrough", clickThroughURL);
   };
 
   VASTTracker.prototype.track = function(eventName, once) {
